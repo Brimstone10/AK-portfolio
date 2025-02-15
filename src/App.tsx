@@ -19,33 +19,42 @@ function App() {
       <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Abhishek Karki</h1>
-            <h2 className="text-xl md:text-2xl mb-6">Quality Assurance Engineer</h2>
-            <p className="text-lg mb-8 text-blue-100">
-              Offering comprehensive knowledge of testing methodologies and software development cycle. 
-              Excellent analytical abilities combined with keen attention to detail.
-            </p>
-            <div className="flex flex-wrap gap-6 text-blue-100">
-              <a href="mailto:brtabhishek10@gmail.com" className="flex items-center gap-2 hover:text-blue-200 transition-colors">
-                <Mail className="w-5 h-5" />
-                brtabhishek10@gmail.com
-              </a>
-              <a href="tel:+9779814363802" className="flex items-center gap-2 hover:text-blue-200 transition-colors">
-                <Phone className="w-5 h-5" />
-                +977 9814363802
-              </a>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-5 h-5" />
-                Lazimpat, Kathmandu
-              </div>
-              <a 
-                href="https://www.linkedin.com/in/abhishek-karki-882076219/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="flex items-center gap-2 hover:text-blue-200 transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-                LinkedIn
+          </div> {/* Closing tag for the container div */}
+          <div className="absolute left-5 -top-100 w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <img
+                src="/public/profile-pic.jpeg"
+                alt="Abhishek Karki"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="pl-72"> {/* Added padding-left to accommodate profile picture */}
+              <h1 className="text-4xl md:text-6xl font-bold mb-4">Abhishek Karki</h1>
+              <h2 className="text-xl md:text-2xl mb-6">Quality Assurance Engineer</h2>
+              <p className="text-lg mb-8 text-blue-100">
+                Offering comprehensive knowledge of testing methodologies and software development cycle. 
+                Excellent analytical abilities combined with keen attention to detail.
+              </p>
+              <div className="flex flex-wrap gap-6 text-blue-100">
+                <a href="mailto:brtabhishek10@gmail.com" className="flex items-center gap-2 hover:text-blue-200 transition-colors">
+                  <Mail className="w-5 h-5" />
+                  brtabhishek10@gmail.com
+                </a>
+                <a href="tel:+9779814363802" className="flex items-center gap-2 hover:text-blue-200 transition-colors">
+                  <Phone className="w-5 h-5" />
+                  +977 9814363802
+                </a>
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-5 h-5" />
+                  Lazimpat, Kathmandu
+                </div>
+                <a 
+                  href="https://www.linkedin.com/in/abhishek-karki-882076219/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-2 hover:text-blue-200 transition-colors"
+                >
+                  <Linkedin className="w-5 h-5" />
+                  LinkedIn
               </a>
             </div>
           </div>
