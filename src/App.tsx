@@ -1,8 +1,8 @@
+import React from 'react';
 import { Linkedin, Mail, Phone, MapPin, Download } from 'lucide-react';
 
 function App() {
   const handleDownload = () => {
-    // Create a link to download the resume
     const link = document.createElement('a');
     link.href = '/Abhishek-Karki-Resume.pdf'; 
     link.setAttribute('download', 'Abhishek-Karki-Resume.pdf');
@@ -16,18 +16,17 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div className="container mx-auto px-4 py-16">
-          <div className="max-w-4xl mx-auto">
-          </div> {/* Closing tag for the container div */}
-          <div className="absolute left-5 -top-100 w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-lg">
+      <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white relative">
+        <div className="container mx-auto px--5 py-10">
+          <div className="max-w-8xl mx-auto flex items-start gap-12">
+            <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg flex-shrink-0 ">
               <img
-                src="/public/profile-pic.jpeg"
+                src="/profile-pic.jpeg"
                 alt="Abhishek Karki"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="pl-72"> {/* Added padding-left to accommodate profile picture */}
+            <div className="flex-1 info-sec">
               <h1 className="text-4xl md:text-6xl font-bold mb-4">Abhishek Karki</h1>
               <h2 className="text-xl md:text-2xl mb-6">Quality Assurance Engineer</h2>
               <p className="text-lg mb-8 text-blue-100">
@@ -55,12 +54,14 @@ function App() {
                 >
                   <Linkedin className="w-5 h-5" />
                   LinkedIn
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </header>
 
+      {/* Rest of the component remains unchanged */}
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto space-y-16">
           {/* Experience Section */}
